@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+
+<body>
+
+<form>
+
+<h1>Pizza Ordering Form</h1>
+
+<!-- Contact Information -->
+<h2>Contact Information</h2>
+
+<label for="inName">Name:</label>
+<input type="text" name="inName" id="inName" required><br>
+
+<label for="inPhone">Phone:</label>
+<input type="text" name="inPhone" id="inPhone" required><br>
+
+<label for="inEmail">Email:</label>
+<input type="email" name="inEmail" id="inEmail" required><br>
+
+<br>
+
+<!-- Pizza Size -->
+<h2>Select Pizza Size</h2>
+
+<label for="pizzaSize">Pizza Size:</label>
+<select name="pizzaSize" id="pizzaSize" required>
+    <option value="" selected>---Select Size---</option>
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+</select>
+
+<br><br>
+
+<!-- Sauce -->
+<h2>Select Sauce</h2>
+
+<input type="radio" name="sauce" value="marinara" required><label>Marinara</label><br>
+<input type="radio" name="sauce" value="ranch"><label>Ranch</label><br>
+<input type="radio" name="sauce" value="none"><label>No Sauce</label><br>
+
+<br>
+
+<!-- Toppings -->
+<h2>Select Toppings</h2>
+
+<input type="checkbox" name="topping" value="pepperoni"><label>Pepperoni</label>
+<input type="checkbox" name="topping" value="sausage"><label>Sausage</label><br>
+
+<input type="checkbox" name="topping" value="mushroom"><label>Mushroom</label>
+<input type="checkbox" name="topping" value="pineapple"><label>Pineapple</label><br>
+
+<input type="checkbox" name="topping" value="peppers"><label>Peppers</label>
+<input type="checkbox" name="topping" value="onions"><label>Onions</label>
+
+
+
+<!-- Additional Instructions -->
+
+<h2>Additional Instructions</h2>
+<textarea name="comments">Add instructions here...</textarea>
+
+<br><br>
+
+<head>List of My Favorite Games</head>
+<table border="1">
+    <tr>
+        <th>Developer</th>
+        <th>Title</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Bungie</td> 
+        <td>Halo</td>
+        <td>2001</td>
+    </tr>
+    <tr>
+        <td>Halo 2</td>
+        <td>2004</td>
+    </tr>
+    <tr>
+        <td>Halo 3</td>
+        <td>2007</td>
+    </tr>
+    <tr>
+        <td>Mojang</td>
+        <td>Minecraft</td>
+        <td>2011</td>
+    </tr>
+    <tr>
+        <td colspan="3">Count: 4</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<!-- Submit Button -->
+<input type="submit" value="Submit!">
+
+</form>
+
+</body>
+</html>
