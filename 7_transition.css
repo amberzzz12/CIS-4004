@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+
+#menuItems {
+    width: 260px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#menuItems button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(blue, navy);
+    transition: background-color 0.3s;
+}
+
+#menuItems button:hover {
+    background-color: #333;
+}
+
+
+#recentArticles {
+    background: goldenrod;
+}
+
+
+#jumpMenu {
+    display: none;
+    list-style: none;
+    background: goldenrod;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+
+#jumpMenu li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: blue;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;  
+}
+
+#jumpMenu li a:hover {
+    background: navy;
+    color: white;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+header {
+    background: red;
+    text-align: center;
+    padding: 30px;
+}
+
+header p {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+    font-family: "Times New Roman";
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 40px 40px;
+}
+
+
+article {
+    color: #c9c9c9;
+    transition: color 2s, transform 2s;
+}
+
+
+article:hover {
+    color: #333;
+    transform: scale(1.05);
+}
+
+
+article p:first-of-type::first-letter {
+    font-family: "Times New Roman";
+    font-size: 36px;
+}
+
+
+a[href*="google"]::after {
+    content: "";              
+    display: inline-block;    
+    width: 50px;              
+    height: 30px;             
+    background: url("arrow.png") no-repeat center;
+    background-size: contain; 
+}
+
+#thanks {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    background: lightblue;
+    padding: 15px;
+    font-size: 22px;
+    border: 1px solid #333;
+}
+
+
+#thanks {
+    text-align: center;
+    margin: 40px;
+}
+
+footer {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+}
